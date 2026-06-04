@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>鏁扮⒊缁忕含 鈥?涓纰冲悎瑙勬櫤鑳芥湇鍔″钩鍙?/title>
+  <title>数碳经纬 — 中欧碳合规智能服务平台</title>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   <style>
-    /* ========== 鍏ㄥ眬閲嶇疆涓庡熀纭€鏍峰紡 ========== */
+    /* ========== 全局重置与基础样式 ========== */
     *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
@@ -26,11 +26,11 @@
       line-height: 1.6;
       overflow-x: hidden;
     }
-    /* 鏁板瓧瀛椾綋 */
+    /* 数字字体 */
     .num-font {
       font-family: 'DM Sans', 'Noto Sans SC', sans-serif;
     }
-    /* 椤甸潰鍒囨崲 */
+    /* 页面切换 */
     .page-section {
       display: none;
     }
@@ -42,7 +42,7 @@
       color: inherit;
     }
 
-    /* ========== 鎸夐挳绯荤粺 ========== */
+    /* ========== 按钮系统 ========== */
     .btn-primary {
       display: inline-flex;
       align-items: center;
@@ -104,7 +104,7 @@
       font-size: 16px;
     }
 
-    /* ========== 鍗＄墖绯荤粺 ========== */
+    /* ========== 卡片系统 ========== */
     .card {
       background: #FFFFFF;
       border-radius: 16px;
@@ -117,7 +117,7 @@
       box-shadow: 0 8px 24px rgba(0,0,0,0.1);
     }
 
-    /* ========== 瀵艰埅鏍?========== */
+    /* ========== 导航栏 ========== */
     .main-header {
       position: fixed;
       top: 0;
@@ -189,7 +189,7 @@
       align-items: center;
     }
 
-    /* ========== 椤甸潰閫氱敤瀹瑰櫒 ========== */
+    /* ========== 页面通用容器 ========== */
     .page-container {
       max-width: 1400px;
       margin: 0 auto;
@@ -209,7 +209,7 @@
       margin-top: 6px;
     }
 
-    /* ========== 琛ㄥ崟鍏冪礌 ========== */
+    /* ========== 表单元素 ========== */
     input, select, textarea {
       width: 100%;
       padding: 12px 16px;
@@ -251,7 +251,7 @@
       padding-left: 40px;
     }
 
-    /* ========== 琛ㄦ牸 ========== */
+    /* ========== 表格 ========== */
     table {
       width: 100%;
       border-collapse: collapse;
@@ -274,7 +274,7 @@
       background: #FAFCFB;
     }
 
-    /* ========== Tab鏍峰紡 ========== */
+    /* ========== Tab样式 ========== */
     .tab-bar {
       display: flex;
       border-bottom: 2px solid #E0E8E4;
@@ -321,7 +321,7 @@
       border-top: none;
     }
 
-    /* ========== FAQ鎵嬮鐞?========== */
+    /* ========== FAQ手风琴 ========== */
     .faq-item {
       border: 1px solid #E0E8E4;
       border-radius: 12px;
@@ -366,7 +366,7 @@
       font-size: 14px;
     }
 
-    /* ========== 涓婁紶鍖哄煙 ========== */
+    /* ========== 上传区域 ========== */
     .upload-zone {
       border: 2px dashed #C0D8CF;
       border-radius: 16px;
@@ -389,7 +389,7 @@
       font-size: 15px;
     }
 
-    /* ========== 鎻愰啋鏉?========== */
+    /* ========== 提醒条 ========== */
     .alert-bar {
       background: #FFF5F5;
       border-left: 4px solid #E74C3C;
@@ -403,7 +403,7 @@
       gap: 8px;
     }
 
-    /* ========== 鐘舵€佹爣绛?========== */
+    /* ========== 状态标签 ========== */
     .status-tag {
       display: inline-block;
       padding: 4px 12px;
@@ -424,7 +424,7 @@
       color: #3B82F6;
     }
 
-    /* ========== 椤佃剼 ========== */
+    /* ========== 页脚 ========== */
     .main-footer {
       background: linear-gradient(135deg, #0A1628, #0D2818);
       color: rgba(255,255,255,0.8);
@@ -504,8 +504,9 @@
     }
 
     /* ================================================================
-       鐣岄潰涓€锛氶椤?       ================================================================ */
-    /* Hero鍖哄煙 */
+       界面一：首页
+       ================================================================ */
+    /* Hero区域 */
     .hero-section {
       min-height: calc(100vh - 64px);
       padding-top: 64px;
@@ -513,7 +514,7 @@
       position: relative;
       overflow: hidden;
     }
-    /* 瑁呴グblob */
+    /* 装饰blob */
     .hero-blob {
       position: absolute;
       border-radius: 50%;
@@ -586,7 +587,7 @@
       display: flex;
       gap: 16px;
     }
-    /* Hero鍙充晶浠〃鐩橀瑙堝崱鐗?*/
+    /* Hero右侧仪表盘预览卡片 */
     .hero-preview-card {
       background: #fff;
       border-radius: 20px;
@@ -677,7 +678,7 @@
     .scope-item .scope-value.blue { color: #3B82F6; }
     .scope-item .scope-value.orange { color: #F5A623; }
 
-    /* 瀹ｄ紶淇℃伅鍖?*/
+    /* 宣传信息区 */
     .features-section {
       padding: 80px 0;
     }
@@ -723,7 +724,7 @@
       line-height: 1.6;
     }
 
-    /* 淇′换鏁版嵁鏉?*/
+    /* 信任数据条 */
     .trust-bar {
       background: linear-gradient(135deg, #0D7C5F, #00C48C);
       padding: 48px 0;
@@ -750,7 +751,8 @@
     }
 
     /* ================================================================
-       鐣岄潰浜岋細纰虫牳绠?       ================================================================ */
+       界面二：碳核算
+       ================================================================ */
     #page-calc {
       padding-top: 96px;
       padding-bottom: 60px;
@@ -810,7 +812,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 16px;
     }
-    /* 璁＄畻缁撴灉闈㈡澘 */
+    /* 计算结果面板 */
     .result-panel {
       margin-top: 24px;
       padding: 28px;
@@ -883,7 +885,7 @@
     }
 
     /* ================================================================
-       鐣岄潰涓夛細鐢虫姤鏈嶅姟
+       界面三：申报服务
        ================================================================ */
     #page-declare {
       padding-top: 96px;
@@ -943,7 +945,7 @@
     }
 
     /* ================================================================
-       鐣岄潰鍥涳細鏁板瓧璁よ瘉
+       界面四：数字认证
        ================================================================ */
     #page-cert {
       padding-top: 96px;
@@ -1031,7 +1033,7 @@
     }
 
     /* ================================================================
-       鐣岄潰浜旓細璁㈠崟璧嬭兘
+       界面五：订单赋能
        ================================================================ */
     #page-order {
       padding-top: 96px;
@@ -1109,7 +1111,7 @@
       width: 40px;
       text-align: right;
     }
-    /* 璁㈠崟鎺ㄨ崘 */
+    /* 订单推荐 */
     .order-list {
       display: flex;
       flex-direction: column;
@@ -1143,7 +1145,7 @@
     .order-card-meta i {
       color: #00C48C;
     }
-    /* 浜у搧缁胯壊鍚嶇墖 */
+    /* 产品绿色名片 */
     .green-card-section {
       margin-top: 32px;
     }
@@ -1224,7 +1226,7 @@
     }
 
     /* ================================================================
-       鐣岄潰鍏細鍚堜綔甯姪
+       界面六：合作帮助
        ================================================================ */
     #page-help {
       padding-top: 96px;
@@ -1337,59 +1339,59 @@
 </head>
 <body>
 
-  <!-- ==================== 椤堕儴瀵艰埅鏍?==================== -->
+  <!-- ==================== 顶部导航栏 ==================== -->
   <header class="main-header" id="mainHeader">
     <div class="header-inner">
       <div class="logo" onclick="switchPage('home')">
         <i class="fa-solid fa-leaf"></i>
-        <span>鏁扮⒊缁忕含</span>
+        <span>数碳经纬</span>
       </div>
       <ul class="nav-menu">
-        <li><a class="active" href="javascript:void(0)" onclick="switchPage('home')">棣栭〉</a></li>
-        <li><a href="javascript:void(0)" onclick="switchPage('calc')">纰虫牳绠?/a></li>
-        <li><a href="javascript:void(0)" onclick="switchPage('declare')">鐢虫姤鏈嶅姟</a></li>
-        <li><a href="javascript:void(0)" onclick="switchPage('cert')">鏁板瓧璁よ瘉</a></li>
-        <li><a href="javascript:void(0)" onclick="switchPage('order')">璁㈠崟璧嬭兘</a></li>
-        <li><a href="javascript:void(0)" onclick="switchPage('help')">鍚堜綔甯姪</a></li>
+        <li><a class="active" href="javascript:void(0)" onclick="switchPage('home')">首页</a></li>
+        <li><a href="javascript:void(0)" onclick="switchPage('calc')">碳核算</a></li>
+        <li><a href="javascript:void(0)" onclick="switchPage('declare')">申报服务</a></li>
+        <li><a href="javascript:void(0)" onclick="switchPage('cert')">数字认证</a></li>
+        <li><a href="javascript:void(0)" onclick="switchPage('order')">订单赋能</a></li>
+        <li><a href="javascript:void(0)" onclick="switchPage('help')">合作帮助</a></li>
       </ul>
       <div class="header-actions">
-        <button class="btn-outline" onclick="alert('鐧诲綍鍔熻兘鍗冲皢涓婄嚎')">鐧诲綍</button>
-        <button class="btn-primary" onclick="alert('娉ㄥ唽鍔熻兘鍗冲皢涓婄嚎')">娉ㄥ唽</button>
+        <button class="btn-outline" onclick="alert('登录功能即将上线')">登录</button>
+        <button class="btn-primary" onclick="alert('注册功能即将上线')">注册</button>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- ==================== 鐣岄潰涓€锛氶椤?==================== -->
+    <!-- ==================== 界面一：首页 ==================== -->
     <section id="page-home" class="page-section active">
-      <!-- Hero鍖哄煙 -->
+      <!-- Hero区域 -->
       <div class="hero-section">
         <div class="hero-blob hero-blob-1"></div>
         <div class="hero-blob hero-blob-2"></div>
         <div class="hero-blob hero-blob-3"></div>
         <div class="hero-inner">
-          <!-- 宸︿晶鏂囨 -->
+          <!-- 左侧文案 -->
           <div class="hero-text">
-            <div class="hero-tag">涓纰冲悎瑙勬櫤鑳藉钩鍙?/div>
-            <h1 class="hero-title">鏁扮⒊缁忕含</h1>
-            <p class="hero-subtitle">涓纰冲悎瑙勬櫤鑳芥灑绾?/p>
-            <p class="hero-desc">纰虫牳绠?路 鍚堣鐢虫姤 路 缁胯壊璁よ瘉 路 璁㈠崟璧嬭兘</p>
+            <div class="hero-tag">中欧碳合规智能平台</div>
+            <h1 class="hero-title">数碳经纬</h1>
+            <p class="hero-subtitle">中欧碳合规智能枢纽</p>
+            <p class="hero-desc">碳核算 · 合规申报 · 绿色认证 · 订单赋能</p>
             <div class="hero-buttons">
-              <button class="btn-primary btn-large" onclick="alert('鎰熻阿鎮ㄧ殑鍏虫敞锛佸厤璐硅瘯鐢ㄥ姛鑳藉嵆灏嗕笂绾裤€?)">鍏嶈垂璇曠敤</button>
-              <button class="btn-outline btn-large" onclick="alert('浜嗚В鏇村鍔熻兘璇︽儏锛岃鑱旂郴鎴戜滑銆?)">浜嗚В鏇村</button>
+              <button class="btn-primary btn-large" onclick="alert('感谢您的关注！免费试用功能即将上线。')">免费试用</button>
+              <button class="btn-outline btn-large" onclick="alert('了解更多功能详情，请联系我们。')">了解更多</button>
             </div>
           </div>
-          <!-- 鍙充晶浠〃鐩橀瑙?-->
+          <!-- 右侧仪表盘预览 -->
           <div class="hero-preview-card">
             <div class="card-header">
-              <h3><i class="fa-solid fa-chart-pie" style="color:#00C48C;margin-right:8px;"></i>纰宠冻杩瑰垎鏋愭姤鍛?/h3>
-              <span class="live-tag">瀹炴椂</span>
+              <h3><i class="fa-solid fa-chart-pie" style="color:#00C48C;margin-right:8px;"></i>碳足迹分析报告</h3>
+              <span class="live-tag">实时</span>
             </div>
             <div class="hero-chart-container">
               <canvas id="heroChart"></canvas>
               <div class="hero-chart-center">
                 <div class="value num-font">2.35</div>
-                <div class="unit">kg CO鈧俥</div>
+                <div class="unit">kg CO₂e</div>
               </div>
             </div>
             <div class="scope-indicators">
@@ -1410,192 +1412,192 @@
         </div>
       </div>
 
-      <!-- 瀹ｄ紶淇℃伅鍖?-->
+      <!-- 宣传信息区 -->
       <div class="features-section">
         <div class="page-container">
-          <h2 class="section-title">涓轰粈涔堥€夋嫨鏁扮⒊缁忕含</h2>
+          <h2 class="section-title">为什么选择数碳经纬</h2>
           <div class="features-grid">
             <div class="card feature-card">
               <div class="feature-icon green"><i class="fa-solid fa-calculator"></i></div>
               <div>
-                <h3>绮惧噯鏍哥畻</h3>
-                <p>鍩轰簬Ecoinvent銆両PCC绛夊浗闄呮潈濞佹暟鎹簱锛屼骇鍝佺骇纰宠冻杩圭簿鍑嗚绠?/p>
+                <h3>精准核算</h3>
+                <p>基于Ecoinvent、IPCC等国际权威数据库，产品级碳足迹精准计算</p>
               </div>
             </div>
             <div class="card feature-card">
               <div class="feature-icon blue"><i class="fa-solid fa-shield-halved"></i></div>
               <div>
-                <h3>鍚堣鏃犲咖</h3>
-                <p>瑕嗙洊CBAM杩囨浮鏈熷埌姝ｅ紡闃舵鍏ㄦ祦绋嬶紝鑷姩鐢熸垚鍚堣鎶ュ憡</p>
+                <h3>合规无忧</h3>
+                <p>覆盖CBAM过渡期到正式阶段全流程，自动生成合规报告</p>
               </div>
             </div>
             <div class="card feature-card">
               <div class="feature-icon purple"><i class="fa-solid fa-certificate"></i></div>
               <div>
-                <h3>璁よ瘉澧炴晥</h3>
-                <p>涓嶵脺V銆丼GS绛夊浗闄呮満鏋勫悎浣滐紝璁よ瘉鍛ㄦ湡缂╃煭30%</p>
+                <h3>认证增效</h3>
+                <p>与TÜV、SGS等国际机构合作，认证周期缩短30%</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- 淇′换鏁版嵁鏉?-->
+      <!-- 信任数据条 -->
       <div class="trust-bar">
         <div class="trust-bar-inner">
           <div class="trust-item">
             <div class="trust-num num-font" data-target="300">0</div>
-            <div class="trust-label">宸叉湇鍔′紒涓?/div>
+            <div class="trust-label">已服务企业</div>
           </div>
           <div class="trust-item">
             <div class="trust-num num-font" data-target="40">0</div>
-            <div class="trust-label">闄嶄綆鍚堣鎴愭湰</div>
+            <div class="trust-label">降低合规成本</div>
           </div>
           <div class="trust-item">
             <div class="trust-num num-font" data-target="12">0</div>
-            <div class="trust-label">鍚堜綔璁よ瘉鏈烘瀯</div>
+            <div class="trust-label">合作认证机构</div>
           </div>
           <div class="trust-item">
             <div class="trust-num num-font" data-target="99">0</div>
-            <div class="trust-label">鎶ュ憡閫氳繃鐜?/div>
+            <div class="trust-label">报告通过率</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== 鐣岄潰浜岋細纰虫牳绠?==================== -->
+    <!-- ==================== 界面二：碳核算 ==================== -->
     <section id="page-calc" class="page-section">
       <div class="page-container">
         <div class="page-title-area">
-          <h1>纰虫牳绠?/h1>
-          <p>浜у搧绾х⒊瓒宠抗璁＄畻</p>
+          <h1>碳核算</h1>
+          <p>产品级碳足迹计算</p>
         </div>
 
-        <!-- 绾㈣壊鎻愰啋鏉?-->
+        <!-- 红色提醒条 -->
         <div class="alert-bar">
           <i class="fa-solid fa-triangle-exclamation" style="color:#E74C3C;"></i>
-          璺濈涓嬪搴BAM鐢虫姤鎴杩樻湁 <strong>18 澶?/strong>锛岃灏藉揩瀹屾垚鏁版嵁濉姤
+          距离下季度CBAM申报截止还有 <strong>18 天</strong>，请尽快完成数据填报
         </div>
 
-        <!-- 涓讳綋鍙屾爮 -->
+        <!-- 主体双栏 -->
         <div class="calc-layout">
-          <!-- 宸︽爮 - 浜у搧淇℃伅 -->
+          <!-- 左栏 - 产品信息 -->
           <div class="calc-left">
             <div class="card">
-              <div class="card-title"><i class="fa-solid fa-box"></i> 浜у搧淇℃伅</div>
+              <div class="card-title"><i class="fa-solid fa-box"></i> 产品信息</div>
               <div class="form-group">
-                <label>浜у搧鍚嶇О</label>
-                <input type="text" placeholder="璇疯緭鍏ヤ骇鍝佸悕绉?>
+                <label>产品名称</label>
+                <input type="text" placeholder="请输入产品名称">
               </div>
               <div class="form-group">
-                <label>浜у搧绫诲埆</label>
+                <label>产品类别</label>
                 <select>
-                  <option value="">璇烽€夋嫨浜у搧绫诲埆</option>
-                  <option>閽㈤搧</option>
-                  <option>閾?/option>
-                  <option>鍖栧伐</option>
-                  <option>寤烘潗</option>
-                  <option>鍏朵粬</option>
+                  <option value="">请选择产品类别</option>
+                  <option>钢铁</option>
+                  <option>铝</option>
+                  <option>化工</option>
+                  <option>建材</option>
+                  <option>其他</option>
                 </select>
               </div>
               <div class="form-group">
-                <label>鐢熶骇宸ュ簭</label>
-                <textarea rows="3" placeholder="璇锋弿杩颁富瑕佺敓浜у伐搴?></textarea>
+                <label>生产工序</label>
+                <textarea rows="3" placeholder="请描述主要生产工序"></textarea>
               </div>
               <div class="form-group">
-                <label>浜у搧鍗曚綅</label>
+                <label>产品单位</label>
                 <select>
-                  <option>鍚?/option>
-                  <option>浠?/option>
-                  <option>绔嬫柟绫?/option>
-                  <option>鍗冨厠</option>
+                  <option>吨</option>
+                  <option>件</option>
+                  <option>立方米</option>
+                  <option>千克</option>
                 </select>
               </div>
               <div class="helper-links">
-                <a href="javascript:void(0)" onclick="alert('鏍哥畻鎸囧崡鍗冲皢涓婄嚎')"><i class="fa-solid fa-book"></i> 鏌ョ湅鏍哥畻鎸囧崡</a>
-                <a href="javascript:void(0)" onclick="alert('Excel鎵归噺瀵煎叆鍔熻兘鍗冲皢涓婄嚎')"><i class="fa-solid fa-file-excel"></i> 涓婁紶Excel鎵归噺瀵煎叆</a>
+                <a href="javascript:void(0)" onclick="alert('核算指南即将上线')"><i class="fa-solid fa-book"></i> 查看核算指南</a>
+                <a href="javascript:void(0)" onclick="alert('Excel批量导入功能即将上线')"><i class="fa-solid fa-file-excel"></i> 上传Excel批量导入</a>
               </div>
             </div>
           </div>
 
-          <!-- 鍙虫爮 - 鏁版嵁褰曞叆 -->
+          <!-- 右栏 - 数据录入 -->
           <div class="calc-right">
             <div class="card">
-              <div class="card-title"><i class="fa-solid fa-database"></i> 鑳芥簮涓庡師鏉愭枡鏁版嵁</div>
+              <div class="card-title"><i class="fa-solid fa-database"></i> 能源与原材料数据</div>
 
-              <!-- 鑳芥簮鏁版嵁缁?-->
+              <!-- 能源数据组 -->
               <div class="data-group">
-                <div class="data-group-title">鑳芥簮鏁版嵁</div>
+                <div class="data-group-title">能源数据</div>
                 <div class="form-group">
-                  <label>鐢ㄧ數閲?(kWh)</label>
+                  <label>用电量 (kWh)</label>
                   <div class="input-icon-wrapper">
                     <i class="fa-solid fa-bolt"></i>
-                    <input type="number" placeholder="璇疯緭鍏ョ敤鐢甸噺">
+                    <input type="number" placeholder="请输入用电量">
                   </div>
                 </div>
                 <div class="data-row">
                   <div class="form-group">
-                    <label>澶╃劧姘旂敤閲?(m鲁)</label>
+                    <label>天然气用量 (m³)</label>
                     <div class="input-icon-wrapper">
                       <i class="fa-solid fa-fire"></i>
-                      <input type="number" placeholder="璇疯緭鍏ョ敤閲?>
+                      <input type="number" placeholder="请输入用量">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label>鐓ょ偔鐢ㄩ噺 (鍚?</label>
+                    <label>煤炭用量 (吨)</label>
                     <div class="input-icon-wrapper">
                       <i class="fa-solid fa-cube"></i>
-                      <input type="number" placeholder="璇疯緭鍏ョ敤閲?>
+                      <input type="number" placeholder="请输入用量">
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- 鍘熸潗鏂欐暟鎹粍 -->
+              <!-- 原材料数据组 -->
               <div class="data-group">
-                <div class="data-group-title">鍘熸潗鏂欐暟鎹?/div>
+                <div class="data-group-title">原材料数据</div>
                 <div class="data-row">
                   <div class="form-group">
-                    <label>鍘熸潗鏂欑绫?/label>
-                    <input type="text" placeholder="濡傦細閾佺熆鐭?>
+                    <label>原材料种类</label>
+                    <input type="text" placeholder="如：铁矿石">
                   </div>
                   <div class="form-group">
-                    <label>鐢ㄩ噺</label>
+                    <label>用量</label>
                     <div style="display:flex;gap:8px;">
-                      <input type="number" placeholder="鐢ㄩ噺" style="flex:1;">
+                      <input type="number" placeholder="用量" style="flex:1;">
                       <select style="width:100px;">
-                        <option>鍚?/option>
-                        <option>鍗冨厠</option>
-                        <option>浠?/option>
+                        <option>吨</option>
+                        <option>千克</option>
+                        <option>件</option>
                       </select>
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <label>杩愯緭璺濈 (km)</label>
-                  <input type="number" placeholder="璇疯緭鍏ヨ繍杈撹窛绂?>
+                  <label>运输距离 (km)</label>
+                  <input type="number" placeholder="请输入运输距离">
                 </div>
               </div>
 
-              <!-- 鎺掓斁鍥犲瓙搴?-->
+              <!-- 排放因子库 -->
               <div class="data-group">
-                <div class="data-group-title">鎺掓斁鍥犲瓙搴?/div>
+                <div class="data-group-title">排放因子库</div>
                 <div class="form-group">
-                  <label>閫夋嫨鎺掓斁鍥犲瓙鏁版嵁搴?/label>
+                  <label>选择排放因子数据库</label>
                   <select>
                     <option>Ecoinvent</option>
                     <option>IPCC</option>
-                    <option>涓浗鐢电綉</option>
+                    <option>中国电网</option>
                   </select>
-                  <p style="font-size:12px;color:#5A6B7C;margin-top:6px;">涓嶅悓鏁版嵁搴撶殑鎺掓斁鍥犲瓙绮惧害鍜岄€傜敤鑼冨洿涓嶅悓锛屽缓璁牴鎹骇鍝佸嚭鍙ｇ洰鐨勫湴閫夋嫨</p>
+                  <p style="font-size:12px;color:#5A6B7C;margin-top:6px;">不同数据库的排放因子精度和适用范围不同，建议根据产品出口目的地选择</p>
                 </div>
               </div>
             </div>
 
-            <!-- 瀹炴椂璁＄畻缁撴灉闈㈡澘 -->
+            <!-- 实时计算结果面板 -->
             <div class="card result-panel">
-              <div class="card-title"><i class="fa-solid fa-chart-pie"></i> 璁＄畻缁撴灉</div>
-              <div class="result-value num-font">2.35 <span>kg CO鈧俥/鍗曚綅</span></div>
+              <div class="card-title"><i class="fa-solid fa-chart-pie"></i> 计算结果</div>
+              <div class="result-value num-font">2.35 <span>kg CO₂e/单位</span></div>
 
               <div class="result-chart-row">
                 <div class="result-chart-wrapper">
@@ -1623,60 +1625,60 @@
               </div>
             </div>
 
-            <!-- 搴曢儴鎿嶄綔鏍?-->
+            <!-- 底部操作栏 -->
             <div class="calc-bottom-bar">
-              <button class="btn-outline btn-large" onclick="alert('鏁版嵁宸蹭繚瀛橈紝姝ｅ湪璺宠浆鑷崇敵鎶ラ〉闈?..')"><i class="fa-solid fa-floppy-disk"></i> 淇濆瓨骞剁户缁敵鎶?/button>
-              <button class="btn-primary btn-large" onclick="alert('姝ｅ湪鐢熸垚CBAM鎶ュ憡...')"><i class="fa-solid fa-file-pdf"></i> 鐢熸垚CBAM鎶ュ憡</button>
+              <button class="btn-outline btn-large" onclick="alert('数据已保存，正在跳转至申报页面...')"><i class="fa-solid fa-floppy-disk"></i> 保存并继续申报</button>
+              <button class="btn-primary btn-large" onclick="alert('正在生成CBAM报告...')"><i class="fa-solid fa-file-pdf"></i> 生成CBAM报告</button>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== 鐣岄潰涓夛細鐢虫姤鏈嶅姟 ==================== -->
+    <!-- ==================== 界面三：申报服务 ==================== -->
     <section id="page-declare" class="page-section">
       <div class="page-container">
         <div class="page-title-area">
-          <h1>CBAM 鍚堣鐢虫姤鏈嶅姟</h1>
-          <p>瑕嗙洊杩囨浮鏈熷埌姝ｅ紡闃舵锛屼竴绔欏紡瀹屾垚鍚堣鐢虫姤</p>
+          <h1>CBAM 合规申报服务</h1>
+          <p>覆盖过渡期到正式阶段，一站式完成合规申报</p>
         </div>
 
-        <!-- 绾㈣壊鍊掕鏃舵彁绀烘潯 -->
+        <!-- 红色倒计时提示条 -->
         <div class="alert-bar">
           <i class="fa-solid fa-triangle-exclamation" style="color:#E74C3C;"></i>
-          璺濈涓嬪搴︾敵鎶ユ埅姝㈣繕鏈?<strong>18 澶?/strong>锛岃灏藉揩瀹屾垚鏁版嵁濉姤
+          距离下季度申报截止还有 <strong>18 天</strong>，请尽快完成数据填报
         </div>
 
-        <!-- Tab鍒囨崲鍖哄煙 -->
+        <!-- Tab切换区域 -->
         <div class="declare-tabs-card">
           <div class="tab-bar">
-            <button class="tab-btn active" data-tab="declare-tab1">杩囨浮鏈熺敵鎶ワ紙瀛ｅ害锛?/button>
-            <button class="tab-btn" data-tab="declare-tab2">姝ｅ紡闃舵鐢虫姤锛堝勾搴︼級</button>
-            <button class="tab-btn" data-tab="declare-tab3">鏁版嵁鏍搁獙</button>
+            <button class="tab-btn active" data-tab="declare-tab1">过渡期申报（季度）</button>
+            <button class="tab-btn" data-tab="declare-tab2">正式阶段申报（年度）</button>
+            <button class="tab-btn" data-tab="declare-tab3">数据核验</button>
           </div>
 
-          <!-- 杩囨浮鏈烼ab鍐呭 -->
+          <!-- 过渡期Tab内容 -->
           <div class="tab-content-area">
             <div class="tab-panel active" id="declare-tab1">
               <div class="quarter-info">
                 <div>
-                  <h3>2025骞?Q2 杩囨浮鏈熺敵鎶?/h3>
-                  <p style="font-size:13px;color:#5A6B7C;margin-top:4px;">鎶ュ憡鍛ㄦ湡锛?025骞?鏈?鏃?- 2025骞?鏈?0鏃?/p>
+                  <h3>2025年 Q2 过渡期申报</h3>
+                  <p style="font-size:13px;color:#5A6B7C;margin-top:4px;">报告周期：2025年4月1日 - 2025年6月30日</p>
                 </div>
                 <div style="text-align:right;">
-                  <div class="deadline"><i class="fa-solid fa-clock"></i> 鎴鏃ワ細2025骞?鏈?1鏃?/div>
-                  <button class="btn-primary" style="margin-top:12px;" onclick="alert('姝ｅ湪鐢熸垚瀛ｅ害鎶ュ憡...')"><i class="fa-solid fa-file-export"></i> 鐢熸垚瀛ｅ害鎶ュ憡</button>
+                  <div class="deadline"><i class="fa-solid fa-clock"></i> 截止日：2025年7月31日</div>
+                  <button class="btn-primary" style="margin-top:12px;" onclick="alert('正在生成季度报告...')"><i class="fa-solid fa-file-export"></i> 生成季度报告</button>
                 </div>
               </div>
 
-              <h3 style="font-size:16px;font-weight:600;margin-bottom:16px;">鍘嗗彶瀛ｅ害鎶ュ憡</h3>
+              <h3 style="font-size:16px;font-weight:600;margin-bottom:16px;">历史季度报告</h3>
               <table>
                 <thead>
                   <tr>
-                    <th>鎶ュ憡鍛ㄦ湡</th>
-                    <th>鎶ュ憡鏂囦欢</th>
-                    <th>鎻愪氦鏃ユ湡</th>
-                    <th>鐘舵€?/th>
+                    <th>报告周期</th>
+                    <th>报告文件</th>
+                    <th>提交日期</th>
+                    <th>状态</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -1684,311 +1686,312 @@
                     <td>2025 Q1</td>
                     <td><i class="fa-solid fa-file-pdf" style="color:#E74C3C;margin-right:6px;"></i>CBAM_Q1_2025.pdf</td>
                     <td>2025-04-15</td>
-                    <td><span class="status-tag success"><i class="fa-solid fa-check"></i> 宸叉彁浜?/span></td>
+                    <td><span class="status-tag success"><i class="fa-solid fa-check"></i> 已提交</span></td>
                   </tr>
                   <tr>
                     <td>2024 Q4</td>
                     <td><i class="fa-solid fa-file-pdf" style="color:#E74C3C;margin-right:6px;"></i>CBAM_Q4_2024.pdf</td>
                     <td>2025-01-20</td>
-                    <td><span class="status-tag success"><i class="fa-solid fa-check"></i> 宸查€氳繃</span></td>
+                    <td><span class="status-tag success"><i class="fa-solid fa-check"></i> 已通过</span></td>
                   </tr>
                   <tr>
                     <td>2024 Q3</td>
                     <td><i class="fa-solid fa-file-pdf" style="color:#E74C3C;margin-right:6px;"></i>CBAM_Q3_2024.pdf</td>
                     <td>2024-10-18</td>
-                    <td><span class="status-tag success"><i class="fa-solid fa-check"></i> 宸查€氳繃</span></td>
+                    <td><span class="status-tag success"><i class="fa-solid fa-check"></i> 已通过</span></td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <!-- 姝ｅ紡闃舵Tab鍐呭 -->
+            <!-- 正式阶段Tab内容 -->
             <div class="tab-panel" id="declare-tab2">
-              <button class="btn-primary btn-large" style="margin-bottom:24px;" onclick="alert('骞村害鐢虫姤鍚戝鍗冲皢鍚姩...')"><i class="fa-solid fa-plus"></i> 寮€濮嬪勾搴︾敵鎶?/button>
-              <h3 style="font-size:16px;font-weight:600;margin-bottom:20px;">鐢虫姤淇℃伅濉啓</h3>
+              <button class="btn-primary btn-large" style="margin-bottom:24px;" onclick="alert('年度申报向导即将启动...')"><i class="fa-solid fa-plus"></i> 开始年度申报</button>
+              <h3 style="font-size:16px;font-weight:600;margin-bottom:20px;">申报信息填写</h3>
               <div class="form-row">
                 <div class="form-group">
-                  <label>杩涘彛鍟嗙◣鍙?/label>
-                  <input type="text" placeholder="璇疯緭鍏ユ鐩熻繘鍙ｅ晢绋庡彿">
+                  <label>进口商税号</label>
+                  <input type="text" placeholder="请输入欧盟进口商税号">
                 </div>
                 <div class="form-group">
-                  <label>璐у€?(EUR)</label>
-                  <input type="number" placeholder="璇疯緭鍏ヨ揣鍊?>
+                  <label>货值 (EUR)</label>
+                  <input type="number" placeholder="请输入货值">
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group">
-                  <label>鍘熶骇鍥?/label>
+                  <label>原产国</label>
                   <select>
-                    <option value="">璇烽€夋嫨鍘熶骇鍥?/option>
-                    <option>涓浗</option>
-                    <option>淇勭綏鏂?/option>
-                    <option>鍦熻€冲叾</option>
-                    <option>鍏朵粬</option>
+                    <option value="">请选择原产国</option>
+                    <option>中国</option>
+                    <option>俄罗斯</option>
+                    <option>土耳其</option>
+                    <option>其他</option>
                   </select>
                 </div>
                 <div class="form-group">
-                  <label>HS缂栫爜</label>
-                  <input type="text" placeholder="璇疯緭鍏S缂栫爜">
+                  <label>HS编码</label>
+                  <input type="text" placeholder="请输入HS编码">
                 </div>
               </div>
               <p style="font-size:13px;color:#5A6B7C;margin-top:12px;background:#F8FBF9;padding:12px;border-radius:8px;">
                 <i class="fa-solid fa-circle-info" style="color:#3B82F6;margin-right:6px;"></i>
-                姝ｅ紡闃舵鐢虫姤闇€瑕佹洿璇︾粏鐨勪骇鍝佺⒊鎺掓斁鏁版嵁锛屽缓璁厛瀹屾垚纰虫牳绠?              </p>
+                正式阶段申报需要更详细的产品碳排放数据，建议先完成碳核算
+              </p>
             </div>
 
-            <!-- 鏁版嵁鏍搁獙Tab鍐呭 -->
+            <!-- 数据核验Tab内容 -->
             <div class="tab-panel" id="declare-tab3">
-              <div class="upload-zone" onclick="alert('鏂囦欢涓婁紶鍔熻兘鍗冲皢涓婄嚎')">
+              <div class="upload-zone" onclick="alert('文件上传功能即将上线')">
                 <i class="fa-solid fa-cloud-arrow-up"></i>
-                <p>鐐瑰嚮鎴栨嫋鎷戒笂浼犳暟鎹枃浠?/p>
-                <p style="font-size:12px;margin-top:8px;">鏀寔 PDF, Excel, CSV 鏍煎紡</p>
+                <p>点击或拖拽上传数据文件</p>
+                <p style="font-size:12px;margin-top:8px;">支持 PDF, Excel, CSV 格式</p>
               </div>
               <div style="margin-top:20px;">
-                <button class="btn-outline" onclick="alert('姝ｅ湪涓烘偍鍖归厤绗笁鏂规牳鏌ユ満鏋?..')"><i class="fa-solid fa-handshake"></i> 鑱旂郴绗笁鏂规牳鏌ユ満鏋?/button>
+                <button class="btn-outline" onclick="alert('正在为您匹配第三方核查机构...')"><i class="fa-solid fa-handshake"></i> 联系第三方核查机构</button>
               </div>
-              <h3 style="font-size:16px;font-weight:600;margin:24px 0 16px;">鏍告煡鐘舵€?/h3>
+              <h3 style="font-size:16px;font-weight:600;margin:24px 0 16px;">核查状态</h3>
               <div class="verify-list">
                 <div class="verify-item">
                   <div>
-                    <div style="font-weight:600;font-size:14px;">2025 Q1 纰虫帓鏀炬姤鍛婃牳鏌?/div>
-                    <div style="font-size:13px;color:#5A6B7C;margin-top:2px;">鏍告煡鏈烘瀯锛歍脺V鍗楀痉</div>
+                    <div style="font-weight:600;font-size:14px;">2025 Q1 碳排放报告核查</div>
+                    <div style="font-size:13px;color:#5A6B7C;margin-top:2px;">核查机构：TÜV南德</div>
                   </div>
-                  <span class="status-tag success"><i class="fa-solid fa-check"></i> 宸查€氳繃</span>
+                  <span class="status-tag success"><i class="fa-solid fa-check"></i> 已通过</span>
                 </div>
                 <div class="verify-item">
                   <div>
-                    <div style="font-weight:600;font-size:14px;">2024骞村害纰宠冻杩规牳鏌?/div>
-                    <div style="font-size:13px;color:#5A6B7C;margin-top:2px;">鏍告煡鏈烘瀯锛歋GS</div>
+                    <div style="font-weight:600;font-size:14px;">2024年度碳足迹核查</div>
+                    <div style="font-size:13px;color:#5A6B7C;margin-top:2px;">核查机构：SGS</div>
                   </div>
-                  <span class="status-tag warning"><i class="fa-solid fa-clock"></i> 杩涜涓?/span>
+                  <span class="status-tag warning"><i class="fa-solid fa-clock"></i> 进行中</span>
                 </div>
                 <div class="verify-item">
                   <div>
-                    <div style="font-weight:600;font-size:14px;">ISO 14064缁勭粐纰虫牳鏌?/div>
-                    <div style="font-size:13px;color:#5A6B7C;margin-top:2px;">鏍告煡鏈烘瀯锛欳QC</div>
+                    <div style="font-weight:600;font-size:14px;">ISO 14064组织碳核查</div>
+                    <div style="font-size:13px;color:#5A6B7C;margin-top:2px;">核查机构：CQC</div>
                   </div>
-                  <span class="status-tag info"><i class="fa-solid fa-hourglass"></i> 寰呮彁浜?/span>
+                  <span class="status-tag info"><i class="fa-solid fa-hourglass"></i> 待提交</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 搴曢儴鍖哄煙 -->
+        <!-- 底部区域 -->
         <div class="declare-bottom">
           <div class="card">
             <div style="display:flex;justify-content:space-between;align-items:center;">
               <div>
-                <h3 style="font-size:18px;font-weight:600;">闇€瑕佷笓涓氬悎瑙勬寚瀵硷紵</h3>
-                <p style="font-size:14px;color:#5A6B7C;margin-top:4px;">棰勭害鍚堣涓撳锛屼竴瀵逛竴杈呭瀹屾垚鐢虫姤</p>
+                <h3 style="font-size:18px;font-weight:600;">需要专业合规指导？</h3>
+                <p style="font-size:14px;color:#5A6B7C;margin-top:4px;">预约合规专家，一对一辅导完成申报</p>
               </div>
-              <button class="btn-primary btn-large" onclick="alert('鍚堣涓撳棰勭害鍔熻兘鍗冲皢涓婄嚎')"><i class="fa-solid fa-calendar-check"></i> 棰勭害鍚堣涓撳</button>
+              <button class="btn-primary btn-large" onclick="alert('合规专家预约功能即将上线')"><i class="fa-solid fa-calendar-check"></i> 预约合规专家</button>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== 鐣岄潰鍥涳細鏁板瓧璁よ瘉 ==================== -->
+    <!-- ==================== 界面四：数字认证 ==================== -->
     <section id="page-cert" class="page-section">
       <div class="page-container">
         <div class="page-title-area">
-          <h1>缁胯壊璁よ瘉</h1>
-          <p>鎻愬崌浜у搧绔炰簤鍔?/p>
+          <h1>绿色认证</h1>
+          <p>提升产品竞争力</p>
         </div>
 
-        <!-- 涓讳綋鍙屾爮 -->
+        <!-- 主体双栏 -->
         <div class="cert-layout">
-          <!-- 宸︽爮 - 鍥涚璁よ瘉 -->
+          <!-- 左栏 - 四种认证 -->
           <div class="cert-grid">
             <div class="card cert-card">
               <div class="cert-gradient-bar" style="background:linear-gradient(90deg,#00C48C,#00A676);"></div>
               <div class="cert-icon" style="background:linear-gradient(135deg,#00C48C,#00A676);"><i class="fa-solid fa-file-lines"></i></div>
-              <h3>EPD 鐜浜у搧澹版槑</h3>
-              <p>鍏ㄧ敓鍛藉懆鏈熺幆澧冩姤鍛婏紝娆х洘鎷涙姇鏍囧繀澶?/p>
-              <button class="btn-primary" onclick="alert('EPD璁よ瘉鐢宠鍔熻兘鍗冲皢涓婄嚎')">鐢宠</button>
+              <h3>EPD 环境产品声明</h3>
+              <p>全生命周期环境报告，欧盟招投标必备</p>
+              <button class="btn-primary" onclick="alert('EPD认证申请功能即将上线')">申请</button>
             </div>
             <div class="card cert-card">
               <div class="cert-gradient-bar" style="background:linear-gradient(90deg,#3B82F6,#2563EB);"></div>
               <div class="cert-icon" style="background:linear-gradient(135deg,#3B82F6,#2563EB);"><i class="fa-solid fa-leaf"></i></div>
-              <h3>纰宠冻杩硅璇?(ISO 14067)</h3>
-              <p>浜у搧纰虫帓鏀鹃噺璁よ瘉锛孋BAM鍩虹</p>
-              <button class="btn-primary" onclick="alert('ISO 14067璁よ瘉鐢宠鍔熻兘鍗冲皢涓婄嚎')">鐢宠</button>
+              <h3>碳足迹认证 (ISO 14067)</h3>
+              <p>产品碳排放量认证，CBAM基础</p>
+              <button class="btn-primary" onclick="alert('ISO 14067认证申请功能即将上线')">申请</button>
             </div>
             <div class="card cert-card">
               <div class="cert-gradient-bar" style="background:linear-gradient(90deg,#8B5CF6,#7C3AED);"></div>
               <div class="cert-icon" style="background:linear-gradient(135deg,#8B5CF6,#7C3AED);"><i class="fa-solid fa-building"></i></div>
-              <h3>ISO 14064 缁勭粐纰虫牳鏌?/h3>
-              <p>浼佷笟绾х⒊绠＄悊浣撶郴璁よ瘉锛屼緵搴旈摼鍑嗗叆</p>
-              <button class="btn-primary" onclick="alert('ISO 14064璁よ瘉鐢宠鍔熻兘鍗冲皢涓婄嚎')">鐢宠</button>
+              <h3>ISO 14064 组织碳核查</h3>
+              <p>企业级碳管理体系认证，供应链准入</p>
+              <button class="btn-primary" onclick="alert('ISO 14064认证申请功能即将上线')">申请</button>
             </div>
             <div class="card cert-card">
               <div class="cert-gradient-bar" style="background:linear-gradient(90deg,#F5A623,#E09400);"></div>
               <div class="cert-icon" style="background:linear-gradient(135deg,#F5A623,#E09400);"><i class="fa-solid fa-award"></i></div>
-              <h3>娆х洘鐢熸€佹爣绛?(EU Ecolabel)</h3>
-              <p>瀹樻柟鐜繚鏍囧織锛屾彁楂樺搧鐗屾孩浠?/p>
-              <button class="btn-primary" onclick="alert('EU Ecolabel璁よ瘉鐢宠鍔熻兘鍗冲皢涓婄嚎')">鐢宠</button>
+              <h3>欧盟生态标签 (EU Ecolabel)</h3>
+              <p>官方环保标志，提高品牌溢价</p>
+              <button class="btn-primary" onclick="alert('EU Ecolabel认证申请功能即将上线')">申请</button>
             </div>
           </div>
 
-          <!-- 鍙虫爮 - 宸茶幏璁よ瘉浜у搧 -->
+          <!-- 右栏 - 已获认证产品 -->
           <div class="card cert-list">
-            <div class="card-title"><i class="fa-solid fa-list-check"></i> 宸茶幏璁よ瘉浜у搧</div>
+            <div class="card-title"><i class="fa-solid fa-list-check"></i> 已获认证产品</div>
             <div class="cert-list-item">
               <div>
-                <div class="cert-product-name">涓嶉攬閽㈢鏉?/div>
-                <div class="cert-type">ISO 14067 | 鏈夋晥鑷?2026-12</div>
+                <div class="cert-product-name">不锈钢管材</div>
+                <div class="cert-type">ISO 14067 | 有效至 2026-12</div>
               </div>
-              <span class="status-tag success">鏈夋晥</span>
+              <span class="status-tag success">有效</span>
             </div>
             <div class="cert-list-item">
               <div>
-                <div class="cert-product-name">閾濆悎閲戝瀷鏉?/div>
-                <div class="cert-type">EPD | 鏈夋晥鑷?2026-06</div>
+                <div class="cert-product-name">铝合金型材</div>
+                <div class="cert-type">EPD | 有效至 2026-06</div>
               </div>
-              <span class="status-tag success">鏈夋晥</span>
+              <span class="status-tag success">有效</span>
             </div>
             <div class="cert-list-item">
               <div>
-                <div class="cert-product-name">鍖栧伐鍘熸枡A</div>
-                <div class="cert-type">EU Ecolabel | 鏈夋晥鑷?2027-03</div>
+                <div class="cert-product-name">化工原料A</div>
+                <div class="cert-type">EU Ecolabel | 有效至 2027-03</div>
               </div>
-              <span class="status-tag success">鏈夋晥</span>
+              <span class="status-tag success">有效</span>
             </div>
           </div>
         </div>
 
-        <!-- 搴曢儴鎻愮ず鏉?-->
+        <!-- 底部提示条 -->
         <div class="cert-bottom-tip">
           <i class="fa-solid fa-handshake"></i>
-          <span>鎴戜滑涓?T脺V銆丼GS 绛夋満鏋勫悎浣滐紝鍏ㄧ▼浠ｅ姙锛岃璇佸懆鏈熺缉鐭?0%</span>
+          <span>我们与 TÜV、SGS 等机构合作，全程代办，认证周期缩短30%</span>
         </div>
       </div>
     </section>
 
-    <!-- ==================== 鐣岄潰浜旓細璁㈠崟璧嬭兘 ==================== -->
+    <!-- ==================== 界面五：订单赋能 ==================== -->
     <section id="page-order" class="page-section">
       <div class="page-container">
         <div class="page-title-area">
-          <h1>璁㈠崟璧嬭兘</h1>
-          <p>缁胯壊浜у搧浼樺厛鍑烘捣</p>
+          <h1>订单赋能</h1>
+          <p>绿色产品优先出海</p>
         </div>
 
-        <!-- 涓讳綋鍙屾爮 -->
+        <!-- 主体双栏 -->
         <div class="order-layout">
-          <!-- 宸︽爮 - 浣庣⒊绔炰簤鍔涚湅鏉?-->
+          <!-- 左栏 - 低碳竞争力看板 -->
           <div class="card score-panel">
-            <div class="card-title" style="justify-content:center;"><i class="fa-solid fa-gauge-high"></i> 浣庣⒊绔炰簤鍔涚湅鏉?/div>
+            <div class="card-title" style="justify-content:center;"><i class="fa-solid fa-gauge-high"></i> 低碳竞争力看板</div>
             <div class="score-ring-container">
               <canvas id="orderChart"></canvas>
               <div class="score-ring-center">
                 <div class="score-num num-font">78</div>
-                <div class="score-label">鍒?/div>
+                <div class="score-label">分</div>
               </div>
             </div>
-            <p class="score-hint">鎻愬崌璇勫垎鍙幏寰楁洿澶氳鍗曟帹鑽?/p>
+            <p class="score-hint">提升评分可获得更多订单推荐</p>
             <div class="score-details">
               <div class="score-detail-item">
-                <span class="detail-label">纰宠冻杩?/span>
+                <span class="detail-label">碳足迹</span>
                 <div class="detail-bar"><div class="detail-fill green" style="width:85%;"></div></div>
                 <span class="detail-score num-font">85</span>
               </div>
               <div class="score-detail-item">
-                <span class="detail-label">璁よ瘉绛夌骇</span>
+                <span class="detail-label">认证等级</span>
                 <div class="detail-bar"><div class="detail-fill blue" style="width:72%;"></div></div>
                 <span class="detail-score num-font">72</span>
               </div>
               <div class="score-detail-item">
-                <span class="detail-label">鍚堣璁板綍</span>
+                <span class="detail-label">合规记录</span>
                 <div class="detail-bar"><div class="detail-fill green" style="width:90%;"></div></div>
                 <span class="detail-score num-font">90</span>
               </div>
               <div class="score-detail-item">
-                <span class="detail-label">鏁版嵁瀹屾暣搴?/span>
+                <span class="detail-label">数据完整度</span>
                 <div class="detail-bar"><div class="detail-fill orange" style="width:65%;"></div></div>
                 <span class="detail-score num-font">65</span>
               </div>
             </div>
           </div>
 
-          <!-- 鍙虫爮 - 缁胯壊璁㈠崟鎺ㄨ崘 -->
+          <!-- 右栏 - 绿色订单推荐 -->
           <div>
-            <div class="card-title"><i class="fa-solid fa-cart-shopping"></i> 缁胯壊璁㈠崟鎺ㄨ崘</div>
+            <div class="card-title"><i class="fa-solid fa-cart-shopping"></i> 绿色订单推荐</div>
             <div class="order-list">
               <div class="card order-card">
                 <div class="order-card-header">
-                  <h3>寰峰浗BASF鍖栧伐閲囪喘</h3>
-                  <span class="status-tag success">鍖归厤</span>
+                  <h3>德国BASF化工采购</h3>
+                  <span class="status-tag success">匹配</span>
                 </div>
                 <div class="order-card-meta">
-                  <span><i class="fa-solid fa-box"></i> 鑱氭皑閰師鏂?/span>
-                  <span><i class="fa-solid fa-leaf"></i> 纰宠冻杩逛笂闄? 3.2 kg CO鈧俥/kg</span>
+                  <span><i class="fa-solid fa-box"></i> 聚氨酯原料</span>
+                  <span><i class="fa-solid fa-leaf"></i> 碳足迹上限: 3.2 kg CO₂e/kg</span>
                 </div>
-                <button class="btn-primary" onclick="alert('姝ｅ湪鍔犺浇璁㈠崟璇︽儏...')">鏌ョ湅璇︽儏骞舵姤浠?/button>
+                <button class="btn-primary" onclick="alert('正在加载订单详情...')">查看详情并报价</button>
               </div>
               <div class="card order-card">
                 <div class="order-card-header">
-                  <h3>鑽峰叞Vanderlande鐗╂祦璁惧</h3>
-                  <span class="status-tag info">鎺ㄨ崘</span>
+                  <h3>荷兰Vanderlande物流设备</h3>
+                  <span class="status-tag info">推荐</span>
                 </div>
                 <div class="order-card-meta">
-                  <span><i class="fa-solid fa-box"></i> 閾濆悎閲戦儴浠?/span>
-                  <span><i class="fa-solid fa-leaf"></i> 纰宠冻杩逛笂闄? 8.5 kg CO鈧俥/kg</span>
+                  <span><i class="fa-solid fa-box"></i> 铝合金部件</span>
+                  <span><i class="fa-solid fa-leaf"></i> 碳足迹上限: 8.5 kg CO₂e/kg</span>
                 </div>
-                <button class="btn-primary" onclick="alert('姝ｅ湪鍔犺浇璁㈠崟璇︽儏...')">鏌ョ湅璇︽儏骞舵姤浠?/button>
+                <button class="btn-primary" onclick="alert('正在加载订单详情...')">查看详情并报价</button>
               </div>
               <div class="card order-card">
                 <div class="order-card-header">
-                  <h3>娉曞浗Saint-Gobain寤烘潗</h3>
-                  <span class="status-tag success">鍖归厤</span>
+                  <h3>法国Saint-Gobain建材</h3>
+                  <span class="status-tag success">匹配</span>
                 </div>
                 <div class="order-card-meta">
-                  <span><i class="fa-solid fa-box"></i> 閽㈤搧鍨嬫潗</span>
-                  <span><i class="fa-solid fa-leaf"></i> 纰宠冻杩逛笂闄? 2.8 kg CO鈧俥/kg</span>
+                  <span><i class="fa-solid fa-box"></i> 钢铁型材</span>
+                  <span><i class="fa-solid fa-leaf"></i> 碳足迹上限: 2.8 kg CO₂e/kg</span>
                 </div>
-                <button class="btn-primary" onclick="alert('姝ｅ湪鍔犺浇璁㈠崟璇︽儏...')">鏌ョ湅璇︽儏骞舵姤浠?/button>
+                <button class="btn-primary" onclick="alert('正在加载订单详情...')">查看详情并报价</button>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 浜у搧缁胯壊鍚嶇墖 -->
+        <!-- 产品绿色名片 -->
         <div class="green-card-section">
           <div class="card">
-            <div class="card-title"><i class="fa-solid fa-id-card"></i> 浜у搧缁胯壊鍚嶇墖</div>
+            <div class="card-title"><i class="fa-solid fa-id-card"></i> 产品绿色名片</div>
             <div class="green-card-controls">
               <div class="form-group" style="flex:1;">
-                <label>閫夋嫨浜у搧</label>
+                <label>选择产品</label>
                 <select>
-                  <option>涓嶉攬閽㈢鏉?/option>
-                  <option>閾濆悎閲戝瀷鏉?/option>
-                  <option>鍖栧伐鍘熸枡A</option>
+                  <option>不锈钢管材</option>
+                  <option>铝合金型材</option>
+                  <option>化工原料A</option>
                 </select>
               </div>
-              <button class="btn-primary" onclick="alert('姝ｅ湪鐢熸垚浣庣⒊浜у搧鍗?..')"><i class="fa-solid fa-wand-magic-sparkles"></i> 鐢熸垚浣庣⒊浜у搧鍗?/button>
+              <button class="btn-primary" onclick="alert('正在生成低碳产品卡...')"><i class="fa-solid fa-wand-magic-sparkles"></i> 生成低碳产品卡</button>
             </div>
             <div class="green-card-preview">
               <div class="green-card-preview-card">
-                <h3>涓嶉攬閽㈢鏉?鈥?浣庣⒊浜у搧鍚嶇墖</h3>
+                <h3>不锈钢管材 — 低碳产品名片</h3>
                 <div class="gc-row">
-                  <span class="gc-label">纰宠冻杩?/span>
-                  <span class="gc-value num-font">2.35 kg CO鈧俥/鍚?/span>
+                  <span class="gc-label">碳足迹</span>
+                  <span class="gc-value num-font">2.35 kg CO₂e/吨</span>
                 </div>
                 <div class="gc-row">
-                  <span class="gc-label">璁よ瘉鐘舵€?/span>
-                  <span class="gc-value">ISO 14067 宸茶璇?/span>
+                  <span class="gc-label">认证状态</span>
+                  <span class="gc-value">ISO 14067 已认证</span>
                 </div>
                 <div class="gc-row">
-                  <span class="gc-label">CBAM鍚堣</span>
-                  <span class="gc-value">宸查€氳繃</span>
+                  <span class="gc-label">CBAM合规</span>
+                  <span class="gc-value">已通过</span>
                 </div>
                 <div class="gc-row">
-                  <span class="gc-label">浣庣⒊璇勫垎</span>
-                  <span class="gc-value num-font" style="color:#00C48C;">78 鍒?/span>
+                  <span class="gc-label">低碳评分</span>
+                  <span class="gc-value num-font" style="color:#00C48C;">78 分</span>
                 </div>
                 <div class="green-card-tags">
-                  <span class="green-card-tag green"><i class="fa-solid fa-leaf"></i> 浣庣⒊浜у搧</span>
+                  <span class="green-card-tag green"><i class="fa-solid fa-leaf"></i> 低碳产品</span>
                   <span class="green-card-tag blue"><i class="fa-solid fa-shield-halved"></i> ISO 14067</span>
                   <span class="green-card-tag purple"><i class="fa-solid fa-award"></i> EPD</span>
                 </div>
@@ -1997,186 +2000,190 @@
                 <div class="qr-placeholder">
                   <i class="fa-solid fa-qrcode" style="font-size:40px;color:#5A6B7C;"></i>
                 </div>
-                <p style="font-size:12px;color:#5A6B7C;margin-top:8px;">鎵爜鏌ョ湅瀹屾暣浜у搧淇℃伅</p>
-                <button class="btn-outline" style="margin-top:12px;" onclick="alert('PDF瀵煎嚭鍔熻兘鍗冲皢涓婄嚎')"><i class="fa-solid fa-file-pdf"></i> 瀵煎嚭PDF</button>
+                <p style="font-size:12px;color:#5A6B7C;margin-top:8px;">扫码查看完整产品信息</p>
+                <button class="btn-outline" style="margin-top:12px;" onclick="alert('PDF导出功能即将上线')"><i class="fa-solid fa-file-pdf"></i> 导出PDF</button>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 鍔犲叆缁块摼璁″垝 -->
+        <!-- 加入绿链计划 -->
         <div class="join-plan-bar">
-          <button class="btn-primary btn-large" onclick="alert('缁块摼璁″垝鐢宠鍔熻兘鍗冲皢涓婄嚎')" style="padding:16px 48px;font-size:18px;">
-            <i class="fa-solid fa-link"></i> 鍔犲叆缁块摼璁″垝
+          <button class="btn-primary btn-large" onclick="alert('绿链计划申请功能即将上线')" style="padding:16px 48px;font-size:18px;">
+            <i class="fa-solid fa-link"></i> 加入绿链计划
           </button>
         </div>
       </div>
     </section>
 
-    <!-- ==================== 鐣岄潰鍏細鍚堜綔甯姪 ==================== -->
+    <!-- ==================== 界面六：合作帮助 ==================== -->
     <section id="page-help" class="page-section">
       <div class="page-container">
         <div class="page-title-area">
-          <h1>鍚堜綔涓庡府鍔╀腑蹇?/h1>
-          <p>鏉冨▉鍚堜綔锛屾湇鍔″彲闈?/p>
+          <h1>合作与帮助中心</h1>
+          <p>权威合作，服务可靠</p>
         </div>
 
-        <!-- 鍚堜綔鏈烘瀯灞曠ず -->
-        <h2 class="section-title" style="font-size:24px;margin-bottom:24px;">鏉冨▉鍚堜綔鏈烘瀯</h2>
+        <!-- 合作机构展示 -->
+        <h2 class="section-title" style="font-size:24px;margin-bottom:24px;">权威合作机构</h2>
         <div class="partners-grid">
           <div class="partner-card">
             <div class="partner-icon"><i class="fa-solid fa-certificate"></i></div>
-            <h3>涓浗璐ㄩ噺璁よ瘉涓績 (CQC)</h3>
-            <p>涓浗鏉冨▉璁よ瘉鏈烘瀯锛屽浗闄呬簰璁?/p>
+            <h3>中国质量认证中心 (CQC)</h3>
+            <p>中国权威认证机构，国际互认</p>
           </div>
           <div class="partner-card">
             <div class="partner-icon"><i class="fa-solid fa-shield-halved"></i></div>
-            <h3>T脺V鍗楀痉</h3>
-            <p>寰峰浗鎶€鏈洃鐫ｅ崗浼氾紝鍏ㄧ悆棰嗗厛</p>
+            <h3>TÜV南德</h3>
+            <p>德国技术监督协会，全球领先</p>
           </div>
           <div class="partner-card">
             <div class="partner-icon"><i class="fa-solid fa-globe"></i></div>
             <h3>SGS</h3>
-            <p>鍏ㄧ悆妫€楠屻€侀壌瀹氥€佹祴璇曞拰璁よ瘉鏈烘瀯</p>
+            <p>全球检验、鉴定、测试和认证机构</p>
           </div>
           <div class="partner-card">
             <div class="partner-icon"><i class="fa-solid fa-landmark"></i></div>
-            <h3>娆х洘杩涘彛鍟嗗崗浼?/h3>
-            <p>娆х洘瀹樻柟杩涘彛鍟嗚涓氱粍缁?/p>
+            <h3>欧盟进口商协会</h3>
+            <p>欧盟官方进口商行业组织</p>
           </div>
         </div>
 
-        <!-- 甯歌闂FAQ -->
+        <!-- 常见问题FAQ -->
         <div class="faq-section">
-          <h2 class="section-title" style="font-size:24px;margin-bottom:24px;">甯歌闂</h2>
+          <h2 class="section-title" style="font-size:24px;margin-bottom:24px;">常见问题</h2>
           <div class="faq-item">
             <div class="faq-header">
-              <span>CBAM浠€涔堟椂鍊欏紑濮嬫寮忔敹璐癸紵</span>
+              <span>CBAM什么时候开始正式收费？</span>
               <i class="fa-solid fa-plus"></i>
             </div>
             <div class="faq-content">
               <div class="faq-content-inner">
-                CBAM杩囨浮鏈熶粠2023骞?0鏈?鏃ュ紑濮嬶紝浠呰姹傛姤鍛婄⒊鎺掓斁鏁版嵁銆傛寮忛樁娈甸璁′粠2026骞村紑濮嬪緛鏀剁⒊鍏崇◣锛屽叿浣撹垂鐜囧皢鏍规嵁娆х洘纰冲競鍦?EU ETS)浠锋牸纭畾銆?              </div>
+                CBAM过渡期从2023年10月1日开始，仅要求报告碳排放数据。正式阶段预计从2026年开始征收碳关税，具体费率将根据欧盟碳市场(EU ETS)价格确定。
+              </div>
             </div>
           </div>
           <div class="faq-item">
             <div class="faq-header">
-              <span>纰宠冻杩规姤鍛婂繀椤荤粡杩囩涓夋柟鏍告煡鍚楋紵</span>
+              <span>碳足迹报告必须经过第三方核查吗？</span>
               <i class="fa-solid fa-plus"></i>
             </div>
             <div class="faq-content">
               <div class="faq-content-inner">
-                鍦ㄨ繃娓℃湡鍐咃紝纰宠冻杩规姤鍛婂彲浠ヨ嚜琛岃绠楁彁浜ゃ€備絾杩涘叆姝ｅ紡闃舵鍚庯紝CBAM瑕佹眰纰虫帓鏀炬暟鎹繀椤荤粡杩囨鐩熻鍙殑绗笁鏂规牳鏌ユ満鏋勯獙璇併€傚缓璁敖鏃╁缓绔嬫牳鏌ヤ範鎯€?              </div>
+                在过渡期内，碳足迹报告可以自行计算提交。但进入正式阶段后，CBAM要求碳排放数据必须经过欧盟认可的第三方核查机构验证。建议尽早建立核查习惯。
+              </div>
             </div>
           </div>
           <div class="faq-item">
             <div class="faq-header">
-              <span>濡備綍鐢宠娆х洘鐢熸€佹爣绛?EU Ecolabel)锛?/span>
+              <span>如何申请欧盟生态标签(EU Ecolabel)？</span>
               <i class="fa-solid fa-plus"></i>
             </div>
             <div class="faq-content">
               <div class="faq-content-inner">
-                鐢宠娴佺▼鍖呮嫭锛?)閫夋嫨浜у搧绫诲埆瀵瑰簲鐨勬鐩熺敓鎬佹爣绛炬爣鍑嗭紱2)杩涜浜у搧娴嬭瘯鍜岀敓鍛藉懆鏈熻瘎浼帮紱3)閫氳繃鏈夎祫璐ㄧ殑楠岃瘉鏈烘瀯瀹℃牳锛?)鍚戞鐩熷鍛樹細鎻愪氦鐢宠銆傛垜浠钩鍙板彲鍏ㄧ▼浠ｅ姙銆?              </div>
+                申请流程包括：1)选择产品类别对应的欧盟生态标签标准；2)进行产品测试和生命周期评估；3)通过有资质的验证机构审核；4)向欧盟委员会提交申请。我们平台可全程代办。
+              </div>
             </div>
           </div>
           <div class="faq-item">
             <div class="faq-header">
-              <span>骞冲彴鏁版嵁瀹夊叏鍚楋紵</span>
+              <span>平台数据安全吗？</span>
               <i class="fa-solid fa-plus"></i>
             </div>
             <div class="faq-content">
               <div class="faq-content-inner">
-                鎴戜滑閲囩敤閾惰绾ф暟鎹姞瀵嗘妧鏈?AES-256)锛屾湇鍔″櫒閮ㄧ讲鍦ㄦ鐩烥DPR鍚堣鏁版嵁涓績銆傛墍鏈変紒涓氭暟鎹弗鏍奸殧绂伙紝鏈粡鎺堟潈涓嶅彲璁块棶銆傚凡閫氳繃ISO 27001淇℃伅瀹夊叏璁よ瘉銆?              </div>
+                我们采用银行级数据加密技术(AES-256)，服务器部署在欧盟GDPR合规数据中心。所有企业数据严格隔离，未经授权不可访问。已通过ISO 27001信息安全认证。
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- 鏈€鏂版斂绛栧姩鎬?-->
-        <h2 class="section-title" style="font-size:24px;margin-bottom:24px;">鏈€鏂版斂绛栧姩鎬?/h2>
+        <!-- 最新政策动态 -->
+        <h2 class="section-title" style="font-size:24px;margin-bottom:24px;">最新政策动态</h2>
         <div class="news-grid">
           <div class="card news-card">
             <div class="news-date"><i class="fa-regular fa-calendar"></i> 2025-05-20</div>
-            <h3>娆х洘CBAM杩囨浮鏈熸姤鍛婃柊瑙勮瑙?/h3>
-            <a href="javascript:void(0)" onclick="alert('鏂囩珷璇︽儏鍗冲皢涓婄嚎')">浜嗚В鏇村 <i class="fa-solid fa-arrow-right"></i></a>
+            <h3>欧盟CBAM过渡期报告新规详解</h3>
+            <a href="javascript:void(0)" onclick="alert('文章详情即将上线')">了解更多 <i class="fa-solid fa-arrow-right"></i></a>
           </div>
           <div class="card news-card">
             <div class="news-date"><i class="fa-regular fa-calendar"></i> 2025-05-15</div>
-            <h3>2025骞存鐩熺⒊甯傚満纰充环璧板娍鍒嗘瀽</h3>
-            <a href="javascript:void(0)" onclick="alert('鏂囩珷璇︽儏鍗冲皢涓婄嚎')">浜嗚В鏇村 <i class="fa-solid fa-arrow-right"></i></a>
+            <h3>2025年欧盟碳市场碳价走势分析</h3>
+            <a href="javascript:void(0)" onclick="alert('文章详情即将上线')">了解更多 <i class="fa-solid fa-arrow-right"></i></a>
           </div>
           <div class="card news-card">
             <div class="news-date"><i class="fa-regular fa-calendar"></i> 2025-05-10</div>
-            <h3>涓浗鍑哄彛浼佷笟纰冲悎瑙勬寚鍗楀彂甯?/h3>
-            <a href="javascript:void(0)" onclick="alert('鏂囩珷璇︽儏鍗冲皢涓婄嚎')">浜嗚В鏇村 <i class="fa-solid fa-arrow-right"></i></a>
+            <h3>中国出口企业碳合规指南发布</h3>
+            <a href="javascript:void(0)" onclick="alert('文章详情即将上线')">了解更多 <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
 
-        <!-- 鑱旂郴鎴戜滑 -->
-        <h2 class="section-title" style="font-size:24px;margin-bottom:24px;">鑱旂郴鎴戜滑</h2>
+        <!-- 联系我们 -->
+        <h2 class="section-title" style="font-size:24px;margin-bottom:24px;">联系我们</h2>
         <div class="contact-section">
           <div class="card contact-card">
             <i class="fa-solid fa-envelope"></i>
-            <h3>閭</h3>
+            <h3>邮箱</h3>
             <p>support@shutanjingwei.com</p>
           </div>
           <div class="card contact-card">
             <i class="fa-brands fa-weixin"></i>
-            <h3>瀹㈡湇寰俊</h3>
+            <h3>客服微信</h3>
             <div class="wechat-qr">
               <i class="fa-solid fa-qrcode" style="font-size:48px;"></i>
             </div>
           </div>
           <div class="card contact-card">
             <i class="fa-solid fa-headset"></i>
-            <h3>鍦ㄧ嚎鍜ㄨ</h3>
-            <p style="margin-bottom:16px;">宸ヤ綔鏃?9:00-18:00</p>
-            <button class="btn-primary" onclick="alert('鍦ㄧ嚎鍜ㄨ鍔熻兘鍗冲皢涓婄嚎')">绔嬪嵆鍜ㄨ</button>
+            <h3>在线咨询</h3>
+            <p style="margin-bottom:16px;">工作日 9:00-18:00</p>
+            <button class="btn-primary" onclick="alert('在线咨询功能即将上线')">立即咨询</button>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ==================== 椤佃剼 ==================== -->
+  <!-- ==================== 页脚 ==================== -->
   <footer class="main-footer">
     <div class="footer-inner">
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="logo">
             <i class="fa-solid fa-leaf"></i>
-            <span>鏁扮⒊缁忕含</span>
+            <span>数碳经纬</span>
           </div>
-          <p>涓纰冲悎瑙勬櫤鑳芥湇鍔″钩鍙帮紝鍔╁姏浼佷笟绮惧噯鏍哥畻銆佸悎瑙勭敵鎶ャ€佺豢鑹茶璇侊紝璧嬭兘浜у搧鍑烘捣銆?/p>
+          <p>中欧碳合规智能服务平台，助力企业精准核算、合规申报、绿色认证，赋能产品出海。</p>
         </div>
         <div class="footer-col">
-          <h4>浜у搧鏈嶅姟</h4>
+          <h4>产品服务</h4>
           <ul>
-            <li><a href="javascript:void(0)" onclick="switchPage('calc')">纰虫牳绠?/a></li>
-            <li><a href="javascript:void(0)" onclick="switchPage('declare')">鐢虫姤鏈嶅姟</a></li>
-            <li><a href="javascript:void(0)" onclick="switchPage('cert')">鏁板瓧璁よ瘉</a></li>
-            <li><a href="javascript:void(0)" onclick="switchPage('order')">璁㈠崟璧嬭兘</a></li>
+            <li><a href="javascript:void(0)" onclick="switchPage('calc')">碳核算</a></li>
+            <li><a href="javascript:void(0)" onclick="switchPage('declare')">申报服务</a></li>
+            <li><a href="javascript:void(0)" onclick="switchPage('cert')">数字认证</a></li>
+            <li><a href="javascript:void(0)" onclick="switchPage('order')">订单赋能</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>鍏充簬鎴戜滑</h4>
+          <h4>关于我们</h4>
           <ul>
-            <li><a href="javascript:void(0)" onclick="alert('椤甸潰寤鸿涓?)">鍏充簬鎴戜滑</a></li>
-            <li><a href="javascript:void(0)" onclick="alert('椤甸潰寤鸿涓?)">鍚堜綔浼欎即</a></li>
-            <li><a href="javascript:void(0)" onclick="alert('椤甸潰寤鸿涓?)">鍔犲叆鎴戜滑</a></li>
+            <li><a href="javascript:void(0)" onclick="alert('页面建设中')">关于我们</a></li>
+            <li><a href="javascript:void(0)" onclick="alert('页面建设中')">合作伙伴</a></li>
+            <li><a href="javascript:void(0)" onclick="alert('页面建设中')">加入我们</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>鑱旂郴鏂瑰紡</h4>
+          <h4>联系方式</h4>
           <div class="contact-item"><i class="fa-solid fa-envelope"></i> support@shutanjingwei.com</div>
           <div class="contact-item"><i class="fa-solid fa-phone"></i> +86 400-888-0000</div>
-          <div class="contact-item"><i class="fa-solid fa-location-dot"></i> 鍖椾含甯傛捣娣€鍖轰腑鍏虫潙绉戞妧鍥?/div>
+          <div class="contact-item"><i class="fa-solid fa-location-dot"></i> 北京市海淀区中关村科技园</div>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; 2025 鏁扮⒊缁忕含 All Rights Reserved.</span>
+        <span>&copy; 2025 数碳经纬 All Rights Reserved.</span>
         <div>
-          <a href="javascript:void(0)" onclick="alert('闅愮鏀跨瓥椤甸潰寤鸿涓?)">闅愮鏀跨瓥</a>
-          <a href="javascript:void(0)" onclick="alert('鏈嶅姟鏉℃椤甸潰寤鸿涓?)">鏈嶅姟鏉℃</a>
+          <a href="javascript:void(0)" onclick="alert('隐私政策页面建设中')">隐私政策</a>
+          <a href="javascript:void(0)" onclick="alert('服务条款页面建设中')">服务条款</a>
         </div>
       </div>
     </div>
@@ -2184,16 +2191,19 @@
 
   <!-- ==================== JavaScript ==================== -->
   <script>
-    /* ========== 瀵艰埅鍒囨崲 ========== */
+    /* ========== 导航切换 ========== */
     function switchPage(pageName) {
-      // 绉婚櫎鎵€鏈夐〉闈㈢殑active绫?      document.querySelectorAll('.page-section').forEach(function(section) {
+      // 移除所有页面的active类
+      document.querySelectorAll('.page-section').forEach(function(section) {
         section.classList.remove('active');
       });
-      // 缁欑洰鏍囬〉闈㈡坊鍔燼ctive绫?      var targetPage = document.getElementById('page-' + pageName);
+      // 给目标页面添加active类
+      var targetPage = document.getElementById('page-' + pageName);
       if (targetPage) {
         targetPage.classList.add('active');
       }
-      // 鏇存柊瀵艰埅鑿滃崟active鐘舵€?      var navLinks = document.querySelectorAll('.nav-menu a');
+      // 更新导航菜单active状态
+      var navLinks = document.querySelectorAll('.nav-menu a');
       navLinks.forEach(function(link) {
         link.classList.remove('active');
         var dp = link.getAttribute('data-page');
@@ -2202,10 +2212,11 @@
           link.classList.add('active');
         }
       });
-      // 婊氬姩鍒伴《閮?      window.scrollTo(0, 0);
+      // 滚动到顶部
+      window.scrollTo(0, 0);
     }
 
-    /* ========== 瀵艰埅鏍忔粴鍔ㄦ晥鏋?========== */
+    /* ========== 导航栏滚动效果 ========== */
     window.addEventListener('scroll', function() {
       var header = document.getElementById('mainHeader');
       if (window.scrollY > 10) {
@@ -2215,19 +2226,19 @@
       }
     });
 
-    /* ========== Tab鍒囨崲锛堢敵鎶ユ湇鍔￠〉锛?========== */
+    /* ========== Tab切换（申报服务页） ========== */
     document.querySelectorAll('.tab-btn').forEach(function(btn) {
       btn.addEventListener('click', function() {
         var tabId = this.getAttribute('data-tab');
-        // 鎵惧埌鍚岀粍鐨則ab-btn鍜宼ab-panel
+        // 找到同组的tab-btn和tab-panel
         var tabBar = this.parentElement;
         var tabContentArea = tabBar.nextElementSibling;
-        // 鍒囨崲tab-btn鐨刟ctive
+        // 切换tab-btn的active
         tabBar.querySelectorAll('.tab-btn').forEach(function(b) {
           b.classList.remove('active');
         });
         this.classList.add('active');
-        // 鍒囨崲tab-panel鐨刟ctive
+        // 切换tab-panel的active
         tabContentArea.querySelectorAll('.tab-panel').forEach(function(panel) {
           panel.classList.remove('active');
         });
@@ -2238,7 +2249,7 @@
       });
     });
 
-    /* ========== FAQ鎵嬮鐞?========== */
+    /* ========== FAQ手风琴 ========== */
     document.querySelectorAll('.faq-header').forEach(function(header) {
       header.addEventListener('click', function() {
         var item = this.parentElement;
@@ -2246,13 +2257,14 @@
       });
     });
 
-    /* ========== Chart.js 鍥捐〃 ========== */
-    // 棣栭〉Hero鐜舰鍥?    var heroCtx = document.getElementById('heroChart');
+    /* ========== Chart.js 图表 ========== */
+    // 首页Hero环形图
+    var heroCtx = document.getElementById('heroChart');
     if (heroCtx) {
       new Chart(heroCtx, {
         type: 'doughnut',
         data: {
-          labels: ['纰虫帓鏀?, '鍓╀綑'],
+          labels: ['碳排放', '剩余'],
           datasets: [{
             data: [78, 22],
             backgroundColor: ['#00C48C', '#E0E8E4'],
@@ -2275,7 +2287,8 @@
       });
     }
 
-    // 纰虫牳绠楅〉Scope鍗犳瘮鍥?    var calcCtx = document.getElementById('calcChart');
+    // 碳核算页Scope占比图
+    var calcCtx = document.getElementById('calcChart');
     if (calcCtx) {
       new Chart(calcCtx, {
         type: 'doughnut',
@@ -2317,12 +2330,13 @@
       });
     }
 
-    // 璁㈠崟璧嬭兘椤佃瘎鍒嗗渾鐜?    var orderCtx = document.getElementById('orderChart');
+    // 订单赋能页评分圆环
+    var orderCtx = document.getElementById('orderChart');
     if (orderCtx) {
       new Chart(orderCtx, {
         type: 'doughnut',
         data: {
-          labels: ['璇勫垎', '鍓╀綑'],
+          labels: ['评分', '剩余'],
           datasets: [{
             data: [78, 22],
             backgroundColor: ['#00C48C', '#E0E8E4'],
@@ -2345,7 +2359,7 @@
       });
     }
 
-    /* ========== 鏁板瓧璁℃暟鍔ㄧ敾 ========== */
+    /* ========== 数字计数动画 ========== */
     function animateCountUp(element, target, duration) {
       var start = 0;
       var startTime = null;
@@ -2363,7 +2377,7 @@
       requestAnimationFrame(step);
     }
 
-    // 浣跨敤IntersectionObserver妫€娴嬫暟鎹潯杩涘叆瑙嗗彛
+    // 使用IntersectionObserver检测数据条进入视口
     var trustBar = document.querySelector('.trust-bar');
     if (trustBar) {
       var observer = new IntersectionObserver(function(entries) {
